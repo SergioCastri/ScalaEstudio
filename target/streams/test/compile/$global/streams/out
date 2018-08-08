@@ -1,0 +1,5 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/s4n/Documents/pruebasScala/src/test/scala/co.com.pruebasscala/TestSuite.scala:5:7: Generated class co.com.pruebasscala.TestSuite differs only in case from co.com.pruebasscala.testSuite (defined in SyntaxSuite.scala).[0m
+[0m[[0m[33mwarn[0m] [0m[0m  Such classes will overwrite one another on case-insensitive filesystems.[0m
+[0m[[0m[33mwarn[0m] [0m[0mclass TestSuite extends  FunSuite{[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
