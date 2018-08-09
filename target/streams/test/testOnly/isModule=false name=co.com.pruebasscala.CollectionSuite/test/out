@@ -1,0 +1,6 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mCollectionSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- listas[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- una tupla puede terner muchos elempentos, por buben codigo menos de 20[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Se debe poder acceder al valor de un Option de forma segura con getOrElse[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Se debe poder acceder al valor de un Option de forma segura con getOrElse 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- funciones parciales[0m[0m

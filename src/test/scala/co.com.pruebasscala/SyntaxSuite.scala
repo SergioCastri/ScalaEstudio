@@ -1,5 +1,7 @@
 package co.com.pruebasscala
 
+import java.sql.Time
+
 import org.scalatest.FunSuite
 
 import scala.collection.mutable.ArrayBuffer
@@ -64,6 +66,32 @@ class testSuite extends FunSuite{
       def apply (foo: String) = new Bar(foo)
     }
   }
+
+  test("Debería no ensuciar la clase que hereda de un rasgo") {  //manera adecuada de implementar una herencia y no sobreescribir metodos dependiendo de la clase hija
+    sealed trait Animal
+    case class Perro(nombre: String, sonido: String) extends Animal
+    case class Gato(nombre: String, sonido: String) extends Animal
+
+    sealed trait GenericComportamiento[T] {
+      def emitirSonido(animal: T): T
+    }
+
+    object PerroComportamiento extends GenericComportamiento[Perro]{
+      override def emitirSonido(animal: Perro) = {
+        Perro(animal.nombre, "wow")
+      }
+    }
+
+
+    object GatoComportamiento extends GenericComportamiento[Gato]{
+      override def emitirSonido(animal: Gato) = {
+        Gato(animal.nombre, "mia")
+      }
+    }
+    assert(PerroComportamiento.emitirSonido(Perro("Kaiser", "")) == Perro("Kaiser", "wow"))
+
+  }
+
 
 
 
